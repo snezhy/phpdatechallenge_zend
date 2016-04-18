@@ -1,0 +1,43 @@
+<div class="container">
+    <h2>Dates Calculator</h2>
+    <div class="jumbotron">
+        <div class="row">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <label>From:</label>
+                    <div class='input-group date'>
+
+                        <input type='text' class="form-control" id='dateOne' />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <label>To:</label>
+                    <div class='input-group date'>
+
+                        <input type='text' class="form-control" id='dateTwo' />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="btnCalculate" class="btn btn-lg btn-primary">Calculate</button>
+    </div>
+    <div class="jumbotron" id="result_div" style="display: none">
+        <div class="row">
+            <div id="diff_div" class="col-sm-12" style="display: none">
+                <p>The difference between <span id="startDate"></span> and <span id="endDate"> </span> is
+                    <span id="years"></span> years, <span id="months"></span> months, <span id="days"></span> days</p>.
+                <p>That's a total of <span id="total_days"></span> days</p>
+            </div>
+            <div id="error_div" class="alert alert-danger" style="display: none">
+            </div>
+        </div>
+    </div>
+</div>
